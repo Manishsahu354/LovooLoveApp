@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LovooCloneApp">
-
-        <activity android:name=".StartTheDating"></activity>
+        <activity android:name=".SignUpPageActivity"></activity>
+        <activity android:name=".StartTheDating" />
         <activity android:name=".interrestedActivitySeven" />
         <activity android:name=".GenderFifthActivity" />
         <activity android:name=".MainActivity">
