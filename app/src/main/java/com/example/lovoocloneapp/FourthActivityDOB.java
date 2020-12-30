@@ -37,8 +37,7 @@ private Button mBtnForward_01;
             mBtnBack_01.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intentBack_01 = new Intent(FourthActivityDOB.this,GenderFifthActivity.class);
-                    startActivity(intentBack_01);
+                   finish();
                 }
             });
     }
