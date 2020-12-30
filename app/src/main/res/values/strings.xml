@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">LovooCloneApp</string>
+    <string name="finding">Yes, finding someone special
+        sometimes feels like a roller
+        coaster ride.
+    </string>
+    <string name="what_are_really_looking">What are you really looking for?</string>
+    <string name="something_serious">Something serious</string>
+    <string name="new_friends">New friends or chats</string>
+    <string name="somethig_casual">Something casual</string>
+
 </resources>
