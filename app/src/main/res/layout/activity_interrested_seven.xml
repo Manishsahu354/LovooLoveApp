@@ -6,18 +6,30 @@
     android:layout_height="match_parent"
     android:background="@drawable/rectangle_main_background"
     tools:context=".interrestedActivitySeven">
+
+    <TextView
+        android:id="@+id/tvInterestedFourDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_four_dots_whitecolor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_30"
+        android:drawableEnd="@drawable/ic_gender"
+        android:drawablePadding="2dp"/>
     <TextView
         android:id="@+id/tvInterested"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Who are you interested in?"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="@dimen/dp_15"
         android:textStyle="bold"
-        android:textSize="40dp"
+        android:textSize="30sp"
         android:layout_marginStart="30dp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tvInterestedFourDot" />
     <Button
         android:id="@+id/btnWomen"
         android:layout_width="wrap_content"

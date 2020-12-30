@@ -6,19 +6,49 @@
     android:layout_height="match_parent"
     android:background="@drawable/rectangle_main_background"
     tools:context=".GenderFifthActivity">
-
+    <TextView
+        android:id="@+id/TvGenderFirstDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:drawableStart="@drawable/ic_one_dot"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawablePadding="2.5dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/TvGenderSecondDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/ic_one_dot"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableEnd="@drawable/ic_gender"
+        android:drawablePadding="2.5dp"
+        app:layout_constraintStart_toStartOf="@id/TvGenderFirstDot"/>
+    <TextView
+        android:id="@+id/TvGenderTwoDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="49dp"
+        android:drawableStart="@drawable/ic_two_dot_bgcolor"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawablePadding="2.5dp"
+        app:layout_constraintStart_toStartOf="@id/TvGenderFirstDot"/>
     <TextView
         android:id="@+id/tvYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You are..?"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="@dimen/dp_20"
         android:textStyle="bold"
         android:textSize="40dp"
         android:layout_marginStart="30dp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/TvGenderFirstDot" />
     <Button
         android:id="@+id/btnFemale"
         android:layout_width="150dp"
