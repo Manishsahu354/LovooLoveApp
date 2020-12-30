@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LovooCloneApp">
         <activity android:name=".SignUpPageActivity"></activity>
+        <activity android:name=".SecondPageActivity"></activity>
         <activity android:name=".StartTheDating" />
         <activity android:name=".interrestedActivitySeven" />
         <activity android:name=".GenderFifthActivity" />
