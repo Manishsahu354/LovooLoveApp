@@ -102,6 +102,13 @@ app:layout_constraintTop_toTopOf="parent"         />
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Continue with email"
         android:layout_height="wrap_content"/>
-
+    <View
+        android:layout_width="165dp"
+        android:layout_height="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvContinueWithEmail"
+        android:layout_marginTop="@dimen/dp_1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

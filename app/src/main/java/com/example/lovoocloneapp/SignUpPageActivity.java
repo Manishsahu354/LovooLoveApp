@@ -35,8 +35,7 @@ public class SignUpPageActivity extends AppCompatActivity {
         mBtnSignUpBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentBack = new Intent(SignUpPageActivity.this,MainActivity.class);
-                startActivity(intentBack);
+             finish();
             }
         });
 
