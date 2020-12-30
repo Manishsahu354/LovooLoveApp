@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TvUserLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:drawablePadding="2.3dp"
+        android:drawableStart="@drawable/ic_user"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableEnd="@drawable/ic_four_dots_horizontally_aligned_as_a_line"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvHeyThere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvUserLogo"
+        android:text="Hey there!"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tvWhatsYour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvHeyThere"
+        android:layout_marginStart="30dp"
+        android:text="What's your first name?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+         <EditText
+             android:id="@+id/dtFirstName"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:layout_constraintTop_toBottomOf="@id/tvWhatsYour"
+             android:background="@drawable/rectangle_first_name"
+             android:layout_margin="20dp"
+             android:padding="17dp"
+             android:hint="First Name"
+             android:textColor="@color/black"/>
+<Button
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:background="@drawable/round_back_next"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_marginStart="10dp"
+    android:layout_marginBottom="20dp"
+    android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24"
+    android:padding="13dp"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round_back_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_baseline_navigate_next_24"
+        android:padding="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
