@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <TextView
+        android:id="@+id/tvHomeLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:drawableStart="@drawable/ic_heart"
+        android:drawablePadding="5dp"
+        android:text="LOVOO"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvProfileIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:drawableStart="@drawable/ic_user_homepage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFilterIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_filter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewHomePage"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="@dimen/dp_20"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        app:layout_constraintTop_toBottomOf="@id/tvHomeLogo"
+        app:layout_constraintBottom_toTopOf="@id/tvMatchIcon"
+        android:layout_height="400dp">
+    <ImageView
+        android:id="@+id/picOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:src="@drawable/pic_one"
+        app:layout_constraintTop_toBottomOf="@id/tvHomeLogo"
+        app:layout_constraintBottom_toTopOf="@id/tvMatchIcon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/picTwo"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic_two"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeLogo"
+            app:layout_constraintBottom_toTopOf="@id/tvMatchIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/picThree"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic_three"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeLogo"
+            app:layout_constraintBottom_toTopOf="@id/tvMatchIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <ImageView
+            android:id="@+id/picFour"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic_four"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeLogo"
+            app:layout_constraintBottom_toTopOf="@id/tvMatchIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/picFive"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic_five"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeLogo"
+            app:layout_constraintBottom_toTopOf="@id/tvMatchIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/picSix"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic_six"
+            app:layout_constraintTop_toBottomOf="@id/tvHomeLogo"
+            app:layout_constraintBottom_toTopOf="@id/tvMatchIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tvNearbyIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvLiveIcon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLiveIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvMatchIcon"
+        app:layout_constraintStart_toEndOf="@id/tvNearbyIcon" />
+
+    <TextView
+        android:id="@+id/tvMatchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_playing_cards"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvChatsIcon"
+        app:layout_constraintStart_toEndOf="@id/tvLiveIcon" />
+
+    <TextView
+        android:id="@+id/tvChatsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvNewsIcon"
+        app:layout_constraintStart_toEndOf="@id/tvMatchIcon" />
+
+    <TextView
+        android:id="@+id/tvNewsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_notification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvChatsIcon" />
+
+    <TextView
+        android:id="@+id/tvNearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="Nearby"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvLive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNearbyIcon" />
+
+    <TextView
+        android:id="@+id/tvLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="Live"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvMatch"
+        app:layout_constraintStart_toEndOf="@id/tvNearby"
+        app:layout_constraintTop_toBottomOf="@id/tvLiveIcon" />
+
+    <TextView
+        android:id="@+id/tvMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="Match"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvChats"
+        app:layout_constraintStart_toEndOf="@id/tvLive"
+        app:layout_constraintTop_toBottomOf="@id/tvMatchIcon" />
+
+    <TextView
+        android:id="@+id/tvChats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="Chats"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvNews"
+        app:layout_constraintStart_toEndOf="@id/tvMatch"
+        app:layout_constraintTop_toBottomOf="@id/tvChatsIcon" />
+
+    <TextView
+        android:id="@+id/tvNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="News"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvChats"
+        app:layout_constraintTop_toBottomOf="@id/tvNewsIcon" />
+
+    <Button
+        android:id="@+id/btnCrossInImage"
+        android:layout_width="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/cardViewHomePage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnChatInImage"
+        android:background="@drawable/circle_white"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="15dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_cross_homepage"
+        android:padding="13dp"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btnChatInImage"
+        android:layout_width="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/cardViewHomePage"
+        app:layout_constraintStart_toEndOf="@id/btnCrossInImage"
+        android:background="@drawable/circle_white"
+        app:layout_constraintEnd_toStartOf="@id/btnLikeInImage"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="15dp"
+        android:padding="13dp"
+        android:drawableLeft="@drawable/ic_email_homepage"
+        android:layout_height="50dp"/>
+    <Button
+        android:id="@+id/btnLikeInImage"
+        android:layout_width="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/cardViewHomePage"
+        app:layout_constraintStart_toEndOf="@id/btnChatInImage"
+        app:layout_constraintEnd_toEndOf="@id/cardViewHomePage"
+        android:background="@drawable/circle_white"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="15dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_heart_homepage"
+        android:layout_height="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

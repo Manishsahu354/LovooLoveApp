@@ -12,6 +12,11 @@
         <activity android:name=".chatmemberTwoActivity"></activity>
         <activity android:name=".newsActivity" />
         <activity android:name=".ChatActivity" />
+
+        <activity android:name=".LivePageActivity"></activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".VerifyNameActivity" />
+
         <activity android:name=".SignUpPageActivity" />
         <activity android:name=".SecondPageActivity" />
         <activity android:name=".ThirdNameActivity" />
