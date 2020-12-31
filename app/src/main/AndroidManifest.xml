@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LovooCloneApp">
-        <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".VerifyNameActivity"></activity>
+        <activity android:name=".LivePageActivity"></activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".VerifyNameActivity" />
         <activity android:name=".SignUpPageActivity" />
         <activity android:name=".SecondPageActivity" />
         <activity android:name=".ThirdNameActivity" />
