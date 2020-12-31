@@ -21,8 +21,8 @@
          />
     <TextView
         android:layout_width="wrap_content"
-        android:layout_marginTop="@dimen/dp_15"
         android:drawableStart="@drawable/ic_vector__3_"
+        android:layout_marginTop="@dimen/dp_15"
         android:layout_marginStart="@dimen/dp_15"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toBottomOf="@id/tvchat"
         android:layout_marginStart="@dimen/dp_15"
         android:textColor="@color/black"
-        android:textSize="@dimen/dp_15"
+        android:textSize="@dimen/dp_20"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@id/ivmeets"
         />
@@ -81,8 +81,48 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_lovoo"
         app:layout_constraintStart_toEndOf="@+id/ivmeets"
         android:layout_marginStart="@dimen/dp_15"
-
         />
+    <ImageView
+        android:id="@+id/ivmeets2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dp_15"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/dp_25"
+        android:src="@drawable/ic_conversation"
+        app:layout_constraintTop_toBottomOf="@+id/ivmeets"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvline2"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivmeets2"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/gray"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/tv_lovoo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/manish"
+        app:layout_constraintTop_toBottomOf="@id/tvline"
+        android:layout_marginStart="@dimen/dp_15"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_20"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/ivmeets"
+        />
+    <TextView
+        android:id="@+id/were_really2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We're really glad to have you with us,.."
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_15"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lovoo2"
+        app:layout_constraintStart_toEndOf="@+id/ivmeets"
+        android:layout_marginStart="@dimen/dp_15"
+        />
+
 
     <TextView
         android:id="@+id/tvhow_to_fill"
@@ -90,7 +130,7 @@
         android:layout_height="wrap_content"
         android:text="@string/how_to_fill"
         android:textSize="@dimen/dp_25"
-        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_130"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/black"
@@ -113,7 +153,7 @@
         android:layout_width="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/tvgive_out"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="@dimen/dp_22"
+        android:textSize="@dimen/dp_20"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/send_icebreak"
         android:layout_height="wrap_content"/>
@@ -122,7 +162,7 @@
         android:layout_width="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/tvsendice"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="@dimen/dp_22"
+        android:textSize="@dimen/dp_20"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/be_active"
         android:layout_height="wrap_content"/>
@@ -132,7 +172,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvbeActive"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="@dimen/dp_22"
-        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginTop="@dimen/dp_20"
         android:textColor="@color/light_blue"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/play_match"
@@ -145,7 +185,7 @@
         android:background="@drawable/chatbutton"
         android:textSize="@dimen/dp_15"
         android:padding="@dimen/dp_22"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="@dimen/dp_50"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/play_match"
