@@ -41,7 +41,6 @@ public class GenderFifthActivity extends AppCompatActivity {
            }
        });
        mBtnMale.setOnClickListener(new View.OnClickListener() {
-        @SuppressLint("ResourceAsColor")
         @Override
            public void onClick(View v) {
             check = true;
@@ -57,10 +56,10 @@ public class GenderFifthActivity extends AppCompatActivity {
            public void onClick(View v) {
                if (check==true){
                    Intent intentForward = new Intent(GenderFifthActivity.this,SixthActivity.class);
+
                    startActivity(intentForward);
                }else {
-                   mBtnFemale.setError("choose one");
-                   mBtnMale.setError("choose one");
+                  Toast.makeText(GenderFifthActivity.this,"Choose One",Toast.LENGTH_SHORT).show();
                }
            }
        });

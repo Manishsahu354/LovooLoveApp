@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class SevenInterestedActivity extends AppCompatActivity {
  private Button mBtnMen;
@@ -73,9 +74,7 @@ public class SevenInterestedActivity extends AppCompatActivity {
                     Intent intentForward = new Intent(SevenInterestedActivity.this,StartTheDating.class);
                     startActivity(intentForward);
                 }else {
-                    mBtnWomen.setError("choose one");
-                    mBtnMen.setError("choose one");
-                    mBtnEveryone.setError("choose one");
+                    Toast.makeText(SevenInterestedActivity.this,"Choose One",Toast.LENGTH_SHORT).show();
                 }
             }
         });

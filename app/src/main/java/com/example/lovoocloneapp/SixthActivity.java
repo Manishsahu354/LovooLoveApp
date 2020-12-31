@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class SixthActivity extends AppCompatActivity {
 private Button mBtnSomething ;
@@ -97,10 +98,7 @@ private  boolean check = false;
                     Intent intentForward = new Intent(SixthActivity.this,SevenInterestedActivity.class);
                     startActivity(intentForward);
                 }else {
-                    mBtnSomethingCasual.setError("choose one");
-                    mBtnSomething.setError("choose one");
-                    mBtnNewFriends.setError("choose one");
-                    mBtnSomethingCasual.setError("choose one");
+                    Toast.makeText(SixthActivity.this,"Choose One",Toast.LENGTH_SHORT).show();
                 }
             }
         });

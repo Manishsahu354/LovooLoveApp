@@ -1,7 +1,9 @@
 package com.example.lovoocloneapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProvider;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -128,6 +130,34 @@ private ImageView mImgPicSix;
                 }else{
                     mImgPicSix.setVisibility(View.VISIBLE);
                 }
+            }
+        });
+        mTvLiveIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentStartLive = new Intent(HomeActivity.this,LivePageActivity.class);
+                startActivity(intentStartLive);
+            }
+        });
+        mTvChatsIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentChat = new Intent(HomeActivity.this,ChatActivity.class);
+                startActivity(intentChat);
+            }
+        });
+        mTvNewsIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentNews = new Intent(HomeActivity.this,newsActivity.class);
+                startActivity(intentNews);
+            }
+        });
+        mTvProfileIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentProfile = new Intent(HomeActivity.this,VerifyNameActivity.class);
+                startActivity(intentProfile);
             }
         });
     }
