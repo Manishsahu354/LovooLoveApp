@@ -11,7 +11,7 @@ import android.widget.EditText;
 public class ThirdNameActivity extends AppCompatActivity {
 private EditText mEtFirstName;
 private Button mBtnBack_03;
-private Button mbtnForward_03;
+private Button mBtnForward_03;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,14 +20,19 @@ private Button mbtnForward_03;
     }
 
     private void initilizationAndListener() {
-        mEtFirstName = findViewById(R.id.dtFirstName);
+        mEtFirstName = findViewById(R.id.etFirstName);
         mBtnBack_03 = findViewById(R.id.btnBack_03);
-        mbtnForward_03 = findViewById(R.id.btnForward_03);
-        mbtnForward_03.setOnClickListener(new View.OnClickListener() {
+        mBtnForward_03 = findViewById(R.id.btnForward_03);
+        mBtnForward_03.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intentForward = new Intent(ThirdNameActivity.this,FourthActivityDOB.class);
-                startActivity(intentForward);
+                if (isCredentialValid()){
+                    Intent intentForward = new Intent(ThirdNameActivity.this,FourthActivityDOB.class);
+                    String data = mEtFirstName.getText().toString();
+                    intentForward.putExtra("FirstName",data);
+                    startActivity(intentForward);
+                }
+
             }
         });
 
@@ -37,5 +42,13 @@ private Button mbtnForward_03;
                 finish();
             }
         });
+    }
+    public boolean isCredentialValid(){
+        boolean isDataTrue = true;
+        if (mEtFirstName.getText().toString().isEmpty()){
+            mEtFirstName.setError("Please Enter First Name");
+            isDataTrue = false;
+        }
+        return isDataTrue;
     }
 }

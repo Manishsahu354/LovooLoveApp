@@ -8,6 +8,7 @@
     tools:context=".VerifyNameActivity">
 
     <TextView
+        android:id="@+id/tvProfileBack"
         android:layout_width="@dimen/dp_25"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -24,11 +25,10 @@ app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="@dimen/dp_20"
         android:layout_height="@dimen/dp_30"/>
 <TextView
-    android:id="@+id/tvTextName"
+    android:id="@+id/tvFirstName"
     android:layout_width="wrap_content"
     android:textSize="18sp"
     android:textStyle="bold"
-    android:text="Praveen"
     android:textColor="@color/black"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
@@ -39,7 +39,7 @@ app:layout_constraintEnd_toEndOf="parent"
         android:id="@+id/vMan"
         android:layout_width="160dp"
         android:layout_marginTop="@dimen/dp_10"
-        app:layout_constraintTop_toBottomOf="@id/tvTextName"
+        app:layout_constraintTop_toBottomOf="@id/tvFirstName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:background="@drawable/ic_user_sk"
@@ -47,7 +47,7 @@ app:layout_constraintEnd_toEndOf="parent"
     <Button
         android:id="@+id/btnEdit"
         android:layout_width="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tvTextName"
+        app:layout_constraintTop_toBottomOf="@id/tvFirstName"
         android:layout_marginTop="140dp"
         android:text="Edit"
         android:textColor="@color/light_blue"

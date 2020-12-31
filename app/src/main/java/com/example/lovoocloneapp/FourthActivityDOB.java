@@ -30,8 +30,10 @@ private Button mBtnForward_01;
             mBtnForward_01.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intentForward_01 = new Intent(FourthActivityDOB.this,GenderFifthActivity.class);
-                    startActivity(intentForward_01);
+                    if (isDataValid()){
+                        Intent intentForward_01 = new Intent(FourthActivityDOB.this,GenderFifthActivity.class);
+                        startActivity(intentForward_01);
+                    }
                 }
             });
             mBtnBack_01.setOnClickListener(new View.OnClickListener() {
@@ -41,4 +43,21 @@ private Button mBtnForward_01;
                 }
             });
     }
+    private boolean isDataValid (){
+        boolean isDataTrue = true;
+        if (mEtDd.getText().toString().length()!=2 ){
+            mEtDd.setError("Invalid Date");
+            isDataTrue = false;
+        }
+        if (mEtMM.getText().toString().length()!=2){
+            mEtMM.setError("Invalid Month");
+            isDataTrue = false;
+        }
+        if (mEtYyyy.getText().toString().length()!=4){
+            mEtYyyy.setError("Invalid Year");
+            isDataTrue = false;
+        }
+        return isDataTrue;
+    }
+
 }
