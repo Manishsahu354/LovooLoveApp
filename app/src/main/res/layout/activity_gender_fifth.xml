@@ -6,28 +6,58 @@
     android:layout_height="match_parent"
     android:background="@drawable/rectangle_main_background"
     tools:context=".GenderFifthActivity">
-
+    <TextView
+        android:id="@+id/tvGenderFirstDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:drawableStart="@drawable/ic_one_dot"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawablePadding="2.5dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/TvGenderSecondDot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="15dp"
+        android:drawableStart="@drawable/ic_one_dot"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableEnd="@drawable/ic_gender"
+        android:drawablePadding="2.5dp"
+        app:layout_constraintStart_toStartOf="@id/tvGenderFirstDot"/>
+    <TextView
+        android:id="@+id/tvGenderTwoDots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="49dp"
+        android:drawableStart="@drawable/ic_two_dot_bgcolor"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawablePadding="2.5dp"
+        app:layout_constraintStart_toStartOf="@id/tvGenderFirstDot"/>
     <TextView
         android:id="@+id/tvYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="You are..?"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="@dimen/dp_20"
         android:textStyle="bold"
         android:textSize="40dp"
         android:layout_marginStart="30dp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tvGenderFirstDot" />
     <Button
         android:id="@+id/btnFemale"
         android:layout_width="150dp"
         android:text="Female"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@id/btnMale"
         app:layout_constraintTop_toBottomOf="@+id/tvYou"
         android:background="@drawable/rectangle_male_female"
-        android:layout_marginStart="30dp"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_height="50dp"/>
     <Button
@@ -36,13 +66,14 @@
         android:text="Male"
         android:textColor="@color/white"
         android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/btnFemale"
         app:layout_constraintTop_toBottomOf="@+id/tvYou"
         android:background="@drawable/rectangle_male_female"
-        android:layout_marginEnd="30dp"
+
     app:layout_constraintEnd_toEndOf="parent"
         android:layout_height="50dp"/>
     <Button
-        android:id="@+id/btnBack_01"
+        android:id="@+id/btnBackGender"
         android:layout_width="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -53,7 +84,7 @@
         android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
         android:layout_height="50dp"/>
     <Button
-        android:id="@+id/btnForward_01"
+        android:id="@+id/btnForwardGender"
         android:layout_width="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,4 +94,5 @@
         android:padding="15dp"
         android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"
         android:layout_height="50dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

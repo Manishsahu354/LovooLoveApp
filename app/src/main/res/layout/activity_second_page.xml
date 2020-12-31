@@ -7,15 +7,30 @@
     android:background="@drawable/backdround"
     tools:context=".SecondPageActivity">
     <ImageView
-        android:layout_width="match_parent"
-        android:src="@drawable/ic_hearts__1_"
-        app:layout_constraintBottom_toTopOf="@+id/tvfinding"
+        android:layout_width="180dp"
+        android:src="@drawable/ic_heart"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvFinding"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="180dp"/>
+
+    <TextView
+        android:id="@+id/tvFinding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/finding"
+        android:paddingStart="@dimen/dp_20"
+        android:paddingEnd="@dimen/dp_20"
+        android:textColor="#2B1B17"
+        app:layout_constraintBottom_toTopOf="@id/btnLetsGo"
+        android:textSize="@dimen/dp_25"
+        android:layout_marginBottom="@dimen/dp_40"
+       />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnLetsGo"
         android:layout_width="match_parent"
         android:layout_marginStart="@dimen/dp_40"
         android:layout_marginEnd="@dimen/dp_40"
@@ -24,25 +39,12 @@
         android:text="Let's go"
         android:gravity="center"
         android:textSize="@dimen/dp_25"
-        app:layout_constraintTop_toBottomOf="@+id/tvfinding"
+        android:layout_marginBottom="@dimen/dp_50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:textAllCaps="false"
+        android:textColor="@color/white"/>
 
-        android:textColor="@color/light_blue"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="546dp" />
 
-    <TextView
-        android:id="@+id/tvfinding"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/dp_380"
-        android:gravity="center"
-        android:text="@string/finding"
-        android:layout_marginStart="@dimen/dp_40"
-        android:layout_marginEnd="@dimen/dp_40"
-        android:textSize="@dimen/dp_25"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="28dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,7 +39,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnGoogle"
         android:layout_width="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +58,7 @@
 app:layout_constraintTop_toTopOf="parent"         />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnFacebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -72,9 +72,10 @@ app:layout_constraintTop_toTopOf="parent"         />
         android:background="@drawable/rectangle"
         android:drawableStart="@drawable/ic_ion_logo_facebook"
         android:text="Continue with Facebook"
+        android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoogle"
         tools:layout_editor_absoluteX="30dp" />
 
     <TextView
@@ -89,18 +90,26 @@ app:layout_constraintTop_toTopOf="parent"         />
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebook" />
     <TextView
+        android:id="@+id/tvContinueWithEmail"
         android:layout_width="wrap_content"
         android:textSize="18dp"
         android:textColor="@color/white"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/button2"
+        app:layout_constraintTop_toBottomOf="@id/btnFacebook"
         app:layout_constraintBottom_toTopOf="@id/textView3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="Continue with email"
         android:layout_height="wrap_content"/>
-
+    <View
+        android:layout_width="165dp"
+        android:layout_height="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvContinueWithEmail"
+        android:layout_marginTop="@dimen/dp_1"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
