@@ -72,6 +72,7 @@ app:layout_constraintTop_toTopOf="parent"         />
         android:background="@drawable/rectangle"
         android:drawableStart="@drawable/ic_ion_logo_facebook"
         android:text="Continue with Facebook"
+        android:textColor="@color/white"
         android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/btnGoogle"
