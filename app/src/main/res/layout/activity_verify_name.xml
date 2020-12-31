@@ -36,13 +36,13 @@ app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     android:layout_height="wrap_content"/>
     <View
-        android:id="@+id/vUser"
+        android:id="@+id/vMan"
         android:layout_width="160dp"
         android:layout_marginTop="@dimen/dp_10"
         app:layout_constraintTop_toBottomOf="@id/tvTextName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:background="@drawable/ic_user"
+        android:background="@drawable/ic_user_sk"
         android:layout_height="160dp"/>
     <Button
         android:id="@+id/btnEdit"
