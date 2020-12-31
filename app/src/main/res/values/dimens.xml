@@ -13,4 +13,6 @@
     <dimen name="dp_28">28dp</dimen>
     <dimen name="dp_50">50dp</dimen>
     <dimen name="dp_300">300dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+
 </resources>
