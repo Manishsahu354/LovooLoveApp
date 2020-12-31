@@ -27,6 +27,13 @@
         android:textSize="30sp"
         android:layout_marginTop="@dimen/dp_50"
         android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/tvSignUp"
+        android:layout_height="3dp"/>
     <EditText
         android:id="@+id/etUserName"
         android:layout_width="match_parent"
@@ -44,7 +51,6 @@
         android:paddingBottom="@dimen/dp_10"
         android:drawablePadding="@dimen/dp_20"
         android:textSize="25sp"
-        android:autofillHints="3"
         android:textColor="@color/white"
         android:background="@drawable/rectangle_male_female"
         android:layout_height="@dimen/dp_50"/>
@@ -52,6 +58,7 @@
     <EditText
         android:id="@+id/etEmailAddress"
         android:layout_width="match_parent"
+
         app:layout_constraintTop_toBottomOf="@id/etUserName"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="@dimen/dp_30"
@@ -65,7 +72,7 @@
         android:paddingTop="@dimen/dp_10"
         android:paddingBottom="@dimen/dp_10"
         android:drawablePadding="@dimen/dp_20"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textColor="@color/white"
         android:background="@drawable/rectangle_male_female"
         android:layout_height="@dimen/dp_50"/>
@@ -86,13 +93,13 @@
         android:paddingTop="@dimen/dp_10"
         android:paddingBottom="@dimen/dp_10"
         android:drawablePadding="@dimen/dp_20"
-        android:textSize="25sp"
+        android:textSize="22sp"
         android:textColor="@color/white"
         android:background="@drawable/rectangle_male_female"
         android:layout_height="@dimen/dp_50"/>
 <Button
     android:id="@+id/btnNext"
-    android:layout_width="match_parent"
+    android:layout_width="300dp"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintTop_toBottomOf="@id/etPassword"
     android:layout_marginStart="@dimen/dp_30"
@@ -103,6 +110,6 @@
     android:text="Next"
     android:textColor="@color/white"
     android:textSize="@dimen/dp_25"
-    android:layout_height="wrap_content"/>
+    android:layout_height="@dimen/dp_50"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
