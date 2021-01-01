@@ -24,7 +24,7 @@
     <string name="credits">CREDITS</string>
     <string name="likes">Likes</string>
     <string name="glances">Glances</string>
-    <dimen name="when_you_are_birthday">When you are birthday?</dimen>
+    <string name="when_you_are_birthday">When you are birthday?</string>
     <string name="morechance">More chance of getting a like</string>
     <string name="complete">Complete your profile</string>
     <string name="smile">Smile in your profile photo</string>
