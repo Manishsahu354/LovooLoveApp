@@ -174,33 +174,34 @@ private ImageView mImgPicSix;
                 startActivity(intentNearby);
             }
         });
-//        mTvLive.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intentStartLiveText= new Intent(HomeActivity.this,LivePageActivity.class);
-//                startActivity(intentStartLiveText);
-//            }
-//        });
-//        mTvChats.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intentChatText = new Intent(HomeActivity.this,ChatActivity.class);
-//                startActivity(intentChatText);
-//            }
-//        });
-//        mTvNews.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intentNewsText = new Intent(HomeActivity.this,newsActivity.class);
-//                startActivity(intentNewsText);
-//            }
-//        });
-//        mTvNearby.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intentNearbyText= new Intent(HomeActivity.this,NearByPageActivity.class);
-//                startActivity(intentNearbyText);
-//            }
-//        });
+        mTvLive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentStartLiveText= new Intent(HomeActivity.this,LivePageActivity.class);
+                startActivity(intentStartLiveText);
+            }
+        });
+        mTvChats.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentChatText = new Intent(HomeActivity.this,ChatActivity.class);
+                startActivity(intentChatText);
+            }
+        });
+        mTvNews.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentNewsText = new Intent(HomeActivity.this,newsActivity.class);
+                startActivity(intentNewsText);
+            }
+        });
+        mTvNearby.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentNearbyText= new Intent(HomeActivity.this,NearByPageActivity.class);
+                startActivity(intentNearbyText);
+            }
+        });
+
     }
 }
