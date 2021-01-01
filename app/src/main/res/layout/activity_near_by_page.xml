@@ -21,6 +21,7 @@
         android:gravity="center"
         />
     <TextView
+        android:id="@+id/tvNearbyBack"
         android:layout_width="wrap_content"
         android:drawableStart="@drawable/ic_vector__3_"
         android:layout_marginTop="@dimen/dp_15"
@@ -33,6 +34,7 @@
         android:id="@+id/scrlLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_20"
         app:layout_constraintStart_toStartOf="parent"
        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvLocation">
@@ -138,7 +140,7 @@
                 app:cardCornerRadius="@dimen/dp_10"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/cardThree"
-                app:layout_constraintTop_toBottomOf="@id/firstCard"
+                app:layout_constraintTop_toBottomOf="@id/cardTwo"
                 android:layout_marginTop="@dimen/dp_10"
                 android:layout_height="wrap_content">
                 <ImageView
@@ -301,51 +303,51 @@
 
     
     <TextView
-        android:id="@+id/tvFirstNearBy"
+        android:id="@+id/tvNearByIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/dp_25"
         android:drawableStart="@drawable/ic_location_blue"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tvFirstLiveIcon"
+        app:layout_constraintEnd_toStartOf="@id/tvLiveIcon"
         app:layout_constraintStart_toStartOf="parent" />
     <TextView
-        android:id="@+id/tvFirstLiveIcon"
+        android:id="@+id/tvLiveIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/dp_25"
         android:drawableStart="@drawable/ic_play"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tvFirstMatchIcon"
-        app:layout_constraintStart_toEndOf="@id/tvFirstNearBy" />
+        app:layout_constraintEnd_toStartOf="@id/tvMatchIcon"
+        app:layout_constraintStart_toEndOf="@id/tvNearByIcon" />
     <TextView
-        android:id="@+id/tvFirstMatchIcon"
+        android:id="@+id/tvMatchIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/dp_25"
         android:drawableStart="@drawable/ic_playing_cards"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tvFirstChatsIcon"
-        app:layout_constraintStart_toEndOf="@id/tvFirstLiveIcon" />
+        app:layout_constraintEnd_toStartOf="@id/tvChatsIcon"
+        app:layout_constraintStart_toEndOf="@id/tvLiveIcon" />
 
     <TextView
-        android:id="@+id/tvFirstChatsIcon"
+        android:id="@+id/tvChatsIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/dp_25"
         android:drawableStart="@drawable/ic_chat"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/tvFirstNewsIcon"
-        app:layout_constraintStart_toEndOf="@id/tvFirstMatchIcon" />
+        app:layout_constraintEnd_toStartOf="@id/tvNewsIcon"
+        app:layout_constraintStart_toEndOf="@id/tvMatchIcon" />
     <TextView
-        android:id="@+id/tvFirstNewsIcon"
+        android:id="@+id/tvNewsIcon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/dp_25"
         android:drawableStart="@drawable/ic_notification"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/tvFirstChatsIcon" />
+        app:layout_constraintStart_toEndOf="@id/tvChatsIcon" />
 
     <TextView
         android:id="@+id/tvNearby"
@@ -357,7 +359,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tvLive"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvFirstNearBy" />
+        app:layout_constraintTop_toBottomOf="@id/tvNearByIcon" />
     <TextView
         android:id="@+id/tvLive"
         android:layout_width="wrap_content"
@@ -368,7 +370,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tvMatch"
         app:layout_constraintStart_toEndOf="@id/tvNearby"
-        app:layout_constraintTop_toBottomOf="@id/tvFirstLiveIcon" />
+        app:layout_constraintTop_toBottomOf="@id/tvLiveIcon" />
 
     <TextView
         android:id="@+id/tvMatch"
@@ -380,7 +382,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tvChats"
         app:layout_constraintStart_toEndOf="@id/tvLive"
-        app:layout_constraintTop_toBottomOf="@id/tvFirstMatchIcon" />
+        app:layout_constraintTop_toBottomOf="@id/tvMatchIcon" />
     <TextView
         android:id="@+id/tvChats"
         android:layout_width="wrap_content"
@@ -391,7 +393,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/tvNews"
         app:layout_constraintStart_toEndOf="@id/tvMatch"
-        app:layout_constraintTop_toBottomOf="@id/tvFirstChatsIcon" />
+        app:layout_constraintTop_toBottomOf="@id/tvChatsIcon" />
 
     <TextView
         android:id="@+id/tvNews"
@@ -403,7 +405,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/tvChats"
-        app:layout_constraintTop_toBottomOf="@id/tvFirstNewsIcon" />
+        app:layout_constraintTop_toBottomOf="@id/tvNewsIcon" />
    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -104,5 +104,19 @@ public class LivePageActivity extends AppCompatActivity {
                 startActivity(intentNearbyText);
             }
         });
+        mTvMatch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentMatch= new Intent(LivePageActivity.this,HomeActivity.class);
+                startActivity(intentMatch);
+            }
+        });
+        mTvMatchIcon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentMatchIcon= new Intent(LivePageActivity.this,HomeActivity.class);
+                startActivity(intentMatchIcon);
+            }
+        });
     }
 }

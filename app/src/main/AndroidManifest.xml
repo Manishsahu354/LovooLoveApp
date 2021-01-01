@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LovooCloneApp">
         <activity android:name=".NearByPageActivity"></activity>
-        <activity android:name=".chatmemberTwoActivity" />
         <activity android:name=".newsActivity" />
         <activity android:name=".ChatActivity" />
        <activity android:name=".LivePageActivity"/>
