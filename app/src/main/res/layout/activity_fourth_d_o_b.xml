@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/TvBirthdayDot"
-        android:text="When is your birthday?"
+        android:text="@string/birthday"
         android:textColor="@color/white"
         android:layout_marginStart="@dimen/dp_30"
         android:textSize="@dimen/sp_30"
@@ -54,7 +54,7 @@
     android:textColorHint="@color/black"
     android:textSize="@dimen/sp_18"
     android:background="@drawable/rectangle_dd"
-    android:hint="DD"/>
+    android:hint="@string/date"/>
 
     <EditText
         android:id="@+id/etMM"
@@ -69,7 +69,7 @@
         android:textColorHint="@color/white"
         android:textSize="@dimen/sp_18"
         android:background="@drawable/rectangle_mm_yyyy"
-        android:hint="MM"/>
+        android:hint="@string/month"/>
 
     <EditText
         android:id="@+id/etYYYY"
@@ -85,13 +85,13 @@
         android:gravity="center"
         android:textSize="@dimen/sp_18"
         android:background="@drawable/rectangle_mm_yyyy"
-        android:hint="YYYY"/>
+        android:hint="@string/hint_year"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etDD"
-        android:text="So,when is the party?"
+        android:text="@string/when_is_party"
         android:layout_marginStart="@dimen/dp_30"
         android:layout_marginTop="@dimen/dp_10"
         android:textColor="@color/white"

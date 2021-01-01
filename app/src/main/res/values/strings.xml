@@ -30,6 +30,11 @@
     <string name="smile">Smile in your profile photo</string>
     <string name="more_likes">More likes</string>
     <string name="manish">Manish 21</string>
+    <string name="birthday">When is your birthday?</string>
+    <string name="hint_year">YYYY</string>
+    <string name="when_is_party">So,when is the party?</string>
+    <string name="date">DD</string>
+    <string name="month">MM</string>
 
 
 
