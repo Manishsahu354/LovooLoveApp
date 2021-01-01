@@ -37,6 +37,7 @@
     <EditText
         android:id="@+id/etUserName"
         android:layout_width="match_parent"
+        android:inputType="text"
         app:layout_constraintTop_toBottomOf="@id/tvSignUp"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="@dimen/dp_50"
@@ -58,7 +59,7 @@
     <EditText
         android:id="@+id/etEmailAddress"
         android:layout_width="match_parent"
-
+        android:inputType="textEmailAddress"
         app:layout_constraintTop_toBottomOf="@id/etUserName"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="@dimen/dp_30"
@@ -79,6 +80,7 @@
 
     <EditText
         android:id="@+id/etPassword"
+        android:inputType="textPassword"
         android:layout_width="match_parent"
         app:layout_constraintTop_toBottomOf="@id/etEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
