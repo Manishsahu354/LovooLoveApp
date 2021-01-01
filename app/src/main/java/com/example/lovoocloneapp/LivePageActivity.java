@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 
 public class LivePageActivity extends AppCompatActivity {
-    private TextView mTvProfileIcon;
+    private TextView mTvProfileLive;
     private TextView mTvFilterIcon;
     private TextView mTvNearbyIcon;
     private TextView mTvLiveIcon;
@@ -29,7 +29,7 @@ public class LivePageActivity extends AppCompatActivity {
     }
 
     private void initializeAndViewListeners() {
-        mTvProfileIcon = findViewById(R.id.tvProfileIcon);
+        mTvProfileLive = findViewById(R.id.tvProfileLive);
         mTvFilterIcon = findViewById(R.id.tvFilterIcon);
         mTvNearbyIcon = findViewById(R.id.tvNearbyIcon);
         mTvLiveIcon = findViewById(R.id.tvLiveIcon);
@@ -62,7 +62,7 @@ public class LivePageActivity extends AppCompatActivity {
                 startActivity(intentNews);
             }
         });
-        mTvProfileIcon.setOnClickListener(new View.OnClickListener() {
+        mTvProfileLive.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intentProfile = new Intent(LivePageActivity.this,VerifyNameActivity.class);
