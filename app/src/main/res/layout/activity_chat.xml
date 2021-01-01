@@ -55,7 +55,7 @@
         app:layout_constraintTop_toBottomOf="@+id/ivmeets"
         android:layout_marginTop="@dimen/dp_10"
         android:background="@color/gray"
-        android:layout_height="1dp"/>
+        android:layout_height="@dimen/dp_1"/>
 
     <TextView
         android:id="@+id/tv_lovoo"

@@ -12,21 +12,21 @@
         android:id="@+id/TvBirthdayDot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginStart="10dp"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_10"
         android:drawableStart="@drawable/ic_one_dot"
         app:layout_constraintTop_toTopOf="parent"
         android:drawableEnd="@drawable/ic_birthday_cake"
-        android:drawablePadding="2.5dp"
+        android:drawablePadding="@dimen/dp_2.5"
         app:layout_constraintStart_toStartOf="parent"/>
 <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="17dp"
+    android:layout_marginTop="@dimen/dp_17"
     app:layout_constraintStart_toStartOf="@id/TvBirthdayDot"
     app:layout_constraintTop_toTopOf="parent"
     android:drawableStart="@drawable/ic_three_dot"
-    android:layout_marginStart="45dp"
+    android:layout_marginStart="@dimen/dp_45"
     />
 
     <TextView
@@ -37,54 +37,53 @@
         app:layout_constraintTop_toBottomOf="@id/TvBirthdayDot"
         android:text="When is your birthday?"
         android:textColor="@color/white"
-        android:layout_marginStart="30dp"
-        android:textSize="30sp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="@dimen/dp_30"
+        android:textSize="@dimen/sp_30"
+        android:layout_marginTop="@dimen/dp_20"
         android:textStyle="bold"/>
 <EditText
     android:id="@+id/etDD"
-    android:layout_width="80dp"
-    android:layout_height="60dp"
+    android:layout_width="@dimen/dp_80"
+    android:layout_height="@dimen/dp_60"
     app:layout_constraintTop_toBottomOf="@id/YourBirthday"
     app:layout_constraintStart_toStartOf="parent"
-    android:layout_marginStart="30dp"
-    android:layout_marginTop="30dp"
+    android:layout_marginStart="@dimen/dp_30"
+    android:layout_marginTop="@dimen/dp_30"
     android:gravity="center"
     app:layout_constraintEnd_toStartOf="@id/etMM"
     android:textColorHint="@color/black"
-    android:textSize="18sp"
+    android:textSize="@dimen/sp_18"
     android:background="@drawable/rectangle_dd"
     android:hint="DD"/>
 
     <EditText
         android:id="@+id/etMM"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
         app:layout_constraintTop_toBottomOf="@id/YourBirthday"
         app:layout_constraintStart_toEndOf="@id/etDD"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
         android:gravity="center"
         app:layout_constraintEnd_toStartOf="@id/etYYYY"
         android:textColorHint="@color/white"
-
-        android:textSize="18sp"
+        android:textSize="@dimen/sp_18"
         android:background="@drawable/rectangle_mm_yyyy"
         android:hint="MM"/>
 
     <EditText
         android:id="@+id/etYYYY"
-        android:layout_width="80dp"
-        android:layout_height="60dp"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_60"
         app:layout_constraintTop_toBottomOf="@id/YourBirthday"
         app:layout_constraintStart_toEndOf="@id/etMM"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_30"
         android:textColorHint="@color/white"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="@dimen/dp_30"
         android:gravity="center"
-        android:textSize="18sp"
+        android:textSize="@dimen/sp_18"
         android:background="@drawable/rectangle_mm_yyyy"
         android:hint="YYYY"/>
     <TextView
@@ -93,32 +92,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/etDD"
         android:text="So,when is the party?"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginTop="@dimen/dp_10"
         android:textColor="@color/white"
-        android:textSize="16sp"/>
+        android:textSize="@dimen/sp_16"/>
     <Button
         android:id="@+id/btnBack_01"
-        android:layout_width="50dp"
+        android:layout_width="@dimen/dp_50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:background="@drawable/circle_white"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="15dp"
-        android:padding="10dp"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_marginStart="@dimen/dp_15"
+        android:padding="@dimen/dp_10"
         android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
-        android:layout_height="50dp"/>
+        android:layout_height="@dimen/dp_50"/>
     <Button
         android:id="@+id/btnForward_01"
-        android:layout_width="50dp"
+        android:layout_width="@dimen/dp_50"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="15dp"
+        android:layout_marginEnd="@dimen/dp_15"
         android:background="@drawable/circle_white"
-        android:layout_marginBottom="30dp"
-        android:padding="15dp"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:padding="@dimen/dp_15"
         android:drawableLeft="@drawable/ic_baseline_arrow_forward_ios_24"
-        android:layout_height="50dp"/>
+        android:layout_height="@dimen/dp_50"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
