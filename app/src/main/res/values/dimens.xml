@@ -22,5 +22,14 @@
     <dimen name="dp_300">300dp</dimen>
     <dimen name="dp_22">22dp</dimen>
     <dimen name="dp_130">130dp</dimen>
+    <dimen name="dp_2.5">2.5dp</dimen>
+    <dimen name="dp_17">17dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="sp_30">30sp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+
 
 </resources>
