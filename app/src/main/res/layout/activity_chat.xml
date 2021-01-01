@@ -8,20 +8,20 @@
 
     <TextView
         android:id="@+id/tvchats"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/dp_20"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:text="@string/Chats"
-        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_15"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
        app:layout_constraintStart_toStartOf="parent"
-        android:gravity="center"
          />
     <TextView
         android:layout_width="wrap_content"
-        android:drawableStart="@drawable/ic_vector__3_"
+        android:drawableStart="@drawable/ic_baseline_arrow_back_ios_new_24_sk"
         android:layout_marginTop="@dimen/dp_15"
         android:layout_marginStart="@dimen/dp_15"
         app:layout_constraintTop_toTopOf="parent"
@@ -54,6 +54,8 @@
         android:layout_width="match_parent"
         app:layout_constraintTop_toBottomOf="@+id/ivmeets"
         android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_25"
         android:background="@color/gray"
         android:layout_height="@dimen/dp_1"/>
 
@@ -77,7 +79,7 @@
         android:layout_height="wrap_content"
         android:text="We're really glad to have you with us,.."
         android:textColor="@color/black"
-        android:textSize="@dimen/dp_15"
+        android:textSize="@dimen/dp_12"
         app:layout_constraintTop_toBottomOf="@+id/tv_lovoo"
         app:layout_constraintStart_toEndOf="@+id/ivmeets"
         android:layout_marginStart="@dimen/dp_15"
@@ -94,6 +96,8 @@
     <TextView
         android:id="@+id/tvline2"
         android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_25"
         app:layout_constraintTop_toBottomOf="@+id/ivmeets2"
         android:layout_marginTop="@dimen/dp_10"
         android:background="@color/gray"
@@ -117,7 +121,7 @@
         android:layout_height="wrap_content"
         android:text="We're really glad to have you with us,.."
         android:textColor="@color/black"
-        android:textSize="@dimen/dp_15"
+        android:textSize="@dimen/dp_12"
         app:layout_constraintTop_toBottomOf="@+id/tv_lovoo2"
         app:layout_constraintStart_toEndOf="@+id/ivmeets"
         android:layout_marginStart="@dimen/dp_15"
@@ -130,12 +134,13 @@
         android:layout_height="wrap_content"
         android:text="@string/how_to_fill"
         android:textSize="@dimen/dp_25"
-        android:layout_marginTop="@dimen/dp_130"
+        android:layout_marginTop="@dimen/dp_50"
+        app:layout_constraintBottom_toTopOf="@id/tvgive_out"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textColor="@color/black"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@+id/tvline"
+        app:layout_constraintTop_toBottomOf="@+id/tvline2"
 
          />
     <TextView
@@ -143,6 +148,7 @@
         android:layout_marginTop="@dimen/dp_15"
         android:layout_width="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/tvhow_to_fill"
+        app:layout_constraintBottom_toTopOf="@id/tvsendice"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="@dimen/dp_20"
         app:layout_constraintStart_toStartOf="parent"
@@ -152,6 +158,7 @@
         android:id="@+id/tvsendice"
         android:layout_width="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/tvgive_out"
+        app:layout_constraintBottom_toTopOf="@id/tvbeActive"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="@dimen/dp_20"
         app:layout_constraintStart_toStartOf="parent"
@@ -169,27 +176,138 @@
     <TextView
         android:id="@+id/tvplayMatch"
         android:layout_width="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tvbeActive"
+        app:layout_constraintTop_toBottomOf="@id/tvbeActive"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnGetPremium"
         android:textSize="@dimen/dp_22"
         android:layout_marginTop="@dimen/dp_20"
-        android:textColor="@color/light_blue"
+        android:textColor="@color/navy_blue"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/play_match"
         android:layout_height="wrap_content"/>
     <Button
         android:id="@+id/btnGetPremium"
         android:layout_width="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/tvplayMatch"
+        app:layout_constraintTop_toBottomOf="@+id/tvbeActive"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvNearbyIcon"
         android:background="@drawable/chatbutton"
         android:textSize="@dimen/dp_15"
-        android:padding="@dimen/dp_22"
+        android:padding="@dimen/dp_15"
         android:layout_marginTop="@dimen/dp_50"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         android:text="@string/play_match"
         android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvNearbyIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvLiveIcon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLiveIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvMatchIcon"
+        app:layout_constraintStart_toEndOf="@id/tvNearbyIcon" />
+
+    <TextView
+        android:id="@+id/tvMatchIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_playing_cards"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvChatsIcon"
+        app:layout_constraintStart_toEndOf="@id/tvLiveIcon" />
+
+    <TextView
+        android:id="@+id/tvChatsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_baseline_airplay_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvNewsIcon"
+        app:layout_constraintStart_toEndOf="@id/tvMatchIcon" />
+
+    <TextView
+        android:id="@+id/tvNewsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_25"
+        android:drawableStart="@drawable/ic_notification"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvChatsIcon" />
+
+    <TextView
+        android:id="@+id/tvNearby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="Nearby"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvLive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvNearbyIcon" />
+
+    <TextView
+        android:id="@+id/tvLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="Live"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvMatch"
+        app:layout_constraintStart_toEndOf="@id/tvNearby"
+        app:layout_constraintTop_toBottomOf="@id/tvLiveIcon" />
+
+    <TextView
+        android:id="@+id/tvMatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="Match"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvChats"
+        app:layout_constraintStart_toEndOf="@id/tvLive"
+        app:layout_constraintTop_toBottomOf="@id/tvMatchIcon" />
+
+    <TextView
+        android:id="@+id/tvChats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="Chats"
+        android:textColor="@color/light_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvNews"
+        app:layout_constraintStart_toEndOf="@id/tvMatch"
+        app:layout_constraintTop_toBottomOf="@id/tvChatsIcon" />
+
+    <TextView
+        android:id="@+id/tvNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:text="News"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvChats"
+        app:layout_constraintTop_toBottomOf="@id/tvNewsIcon" />
 
 
 
