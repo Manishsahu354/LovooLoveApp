@@ -133,6 +133,19 @@ public class newsActivity extends AppCompatActivity {
                 startActivity(intentMatchIcon);
             }
         });
-
+        mTvLikes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mTvLikes.setTextColor(getResources().getColor(R.color.light_blue));
+                mTvGlances.setTextColor(getResources().getColor(R.color.black));
+            }
+        });
+        mTvGlances.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mTvGlances.setTextColor(getResources().getColor(R.color.light_blue));
+                mTvLikes.setTextColor(getResources().getColor(R.color.black));
+            }
+        });
     }
 }
