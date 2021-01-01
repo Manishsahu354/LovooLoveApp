@@ -104,6 +104,13 @@ private ImageView mImgPicSix;
 
             }
         });
+        mBtnChatInImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentChatFromChatInImage = new Intent(HomeActivity.this,ChatActivity.class);
+                startActivity(intentChatFromChatInImage);
+            }
+        });
         mBtnCrossInImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

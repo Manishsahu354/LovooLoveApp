@@ -10,7 +10,7 @@
     <string name="somethig_casual">Something casual</string>
     <string name="text_Lovoo">LOVOO</string>
     <string name="text_Meet">Meet. Great. Heartbeat.</string>
-    <string name="text_Continue_with_Google"></string>
+    <string name="text_Continue_with_Google">Continue With Google</string>
     <string name="Chats">Chats</string>
     <string name="chat">chats</string>
     <string name="lovoTeam">Praveen,21</string>
@@ -24,7 +24,7 @@
     <string name="credits">CREDITS</string>
     <string name="likes">Likes</string>
     <string name="glances">Glances</string>
-    <dimen name="when_you_are_birthday">When you are birthday?</dimen>
+    <string name="when_you_are_birthday">When you are birthday?</string>
     <string name="morechance">More chance of getting a like</string>
     <string name="complete">Complete your profile</string>
     <string name="smile">Smile in your profile photo</string>
