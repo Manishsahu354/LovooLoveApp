@@ -24,17 +24,21 @@
     <string name="credits">CREDITS</string>
     <string name="likes">Likes</string>
     <string name="glances">Glances</string>
-    <dimen name="when_you_are_birthday">When you are birthday?</dimen>
+    <string name="when_you_are_birthday">When you are birthday?</string>
     <string name="morechance">More chance of getting a like</string>
     <string name="complete">Complete your profile</string>
     <string name="smile">Smile in your profile photo</string>
     <string name="more_likes">More likes</string>
     <string name="manish">Manish 21</string>
+
     <string name="birthday">When is your birthday?</string>
     <string name="hint_year">YYYY</string>
     <string name="when_is_party">So,when is the party?</string>
     <string name="date">DD</string>
     <string name="month">MM</string>
+
+    <string name="hyderabad">Hyderabad</string>
+
 
 
 
