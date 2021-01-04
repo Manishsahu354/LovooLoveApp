@@ -38,6 +38,7 @@
         android:text="@string/birthday"
         android:textColor="@color/white"
         android:layout_marginStart="@dimen/dp_30"
+        android:layout_marginEnd="@dimen/dp_20"
         android:textSize="@dimen/sp_30"
         android:layout_marginTop="@dimen/dp_20"
         android:textStyle="bold"/>
